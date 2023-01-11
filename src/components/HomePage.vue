@@ -16,11 +16,21 @@
     padding: 200px 0;
 }
 h1 {
-  color:#737ccf;
+  color:yellow;
   text-align: center;
   font-family: monospace;
   font-weight: 600;
   text-shadow:  4px 4px 5px  #1463f3;
+  animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 h2{
     color: #737ccf;
@@ -28,5 +38,6 @@ h2{
     font-family: monospace;
     font-weight: 500;
     text-shadow: 3px 3px 4px #1463f3;
+    animation: fadeIn 8s;
 }
 </style>

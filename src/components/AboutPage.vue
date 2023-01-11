@@ -1,13 +1,11 @@
 <template>
-    <div class="aboutMe">
-        <div class="container">
-            <div class="card">
-                <div class="front">
-                    <img src="https://i.postimg.cc/htYNktT9/me.jpg" alt="" class="me">
-                </div>
-                <div class="back">
-                    <p>Back</p>
-                </div>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <img src="https://i.postimg.cc/htYNktT9/me.jpg" alt="" class="me">
+            </div>
+            <div class="back">
+                <p>Back</p>
             </div>
         </div>
     </div>
@@ -20,12 +18,7 @@
 </script>
 
 <style scoped>
-.aboutMe{
-    margin: 60px;
-    margin-bottom: 60px;
-    padding: 30px;
-    background-color: #1463f3;
-}
+
 .container {
     width: 30vw;
     height: 90vh;
@@ -34,22 +27,26 @@
     perspective: 100px;
 }
 
+.container:hover {
+    transform: rotateY('180deg');
+}
 .card {
     height: 100%;
     width: 100%;
     position: relative;
     transition: 60s;
+    transform-style: preserve-3d;
 }
 
+.card:hover {
+    cursor: pointer;
+    transform:rotateY('180deg')
+}
 .front , .back{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-}
-
-.front {
-    z-index: 10;
 }
 
 .me{
@@ -59,15 +56,10 @@
 }
 
 .back {
-    background-color: blueviolet;
+    transform: rotateY('180deg');
     display: flex;
-    flex-flow:column wrap ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container:hover .front {
-    transform: rotateY('180deg') rotateZ('180deg')
-    
 }
 </style>

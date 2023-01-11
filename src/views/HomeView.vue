@@ -23,7 +23,5 @@ import Footer from '@/components/Footer.vue'
 <style scoped>
 .home-page {
     background-image: url(https://i.postimg.cc/T1yWkwjV/stars-28.png);
-    /* background-repeat: no-repeat;
-    background-size: cover; */
 }
 </style>
