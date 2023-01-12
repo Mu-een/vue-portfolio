@@ -5,7 +5,9 @@
                 <img src="https://i.postimg.cc/htYNktT9/me.jpg" alt="" class="me">
             </div>
             <div class="back">
-                <p>Back</p>
+                <p> I am a 23 year old learning everything needed to be able to be the best version of myself as a web developer.
+                I am born and bred in Cape Town, South Africa.Currently residing in Athlone.
+                I am a car enthusiast and pop culture fan. I try to stay active by playing soccer, cricket and rugby. I play video games in my free time.</p>
             </div>
         </div>
     </div>
@@ -23,40 +25,43 @@
     width: 30vw;
     height: 90vh;
     margin: auto;
+    margin-top: 29px;
     position: relative;
-    perspective: 100px;
+    perspective: 650px;
 }
 
-.container:hover {
-    transform: rotateY('180deg');
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
 }
 .card {
     height: 100%;
     width: 100%;
     position: relative;
-    transition: 60s;
+    transition: transform 1700ms;
     transform-style: preserve-3d;
 }
 
-.card:hover {
-    cursor: pointer;
-    transform:rotateY('180deg')
-}
 .front , .back{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    border-radius: 3rem;
+    box-shadow: 0 0 6px 2px yellow;
+    width: 30vw;
+    height: 80vh;
     backface-visibility: hidden;
 }
 
 .me{
-    max-width: 100%;
+    max-width: 30vw;
+    height: 80vh;
     border-radius: 2rem;
     object-fit: cover;
 }
 
 .back {
-    transform: rotateY('180deg');
+    font-family: monospace;
+    background-color: yellow;
+    transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
