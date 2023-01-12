@@ -14,6 +14,7 @@
 <style scoped>
 .home {
     padding: 200px 0;
+    height: 85vh;
 }
 h1 {
   color:yellow;

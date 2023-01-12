@@ -1,7 +1,32 @@
 <template>
-    <div>
-
+    <div class="peers">
+        <div v-for="items in myTestimonials" :key="items" class="card" style="width: 18rem;">
+      <img :src= "items.image"  class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ items.name }}</h5>
+        <!-- <p class="card-text">{{ items.testimonial }}</p> -->
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Testimonial
+    </button>
+    
+    <!-- Modal -->
+    <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div  class="modal-dialog">
+        <div  class="modal-content">
+          <div  class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">{{ items.name }}</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div  class="modal-body">
+            <p class="card-text">{{ items.testimonial }}</p>
+          </div>
+        </div>
+      </div>
     </div>
+      </div>
+    </div>
+</div>
 </template>
 
 <script>
@@ -10,29 +35,37 @@
     data(){
         return {
             myTestimonials: [
-                {
-                    image:"",
-                    testimonial:""
+                {   
+                    index:"0",
+                    image:"https://i.postimg.cc/fR0YfGLR/Joel-Profile.jpg",
+                    name:"Joel Mukanya - Lecturer",
+                    testimonial:"Mu-een is a very creative, and well-behaved student. He does enjoy working with his classmates and works well on his project. He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer."
                 },
-                {
-                    image:"",
-                    testimonial:""
+                {   
+                    index:"1",
+                    image:"https://i.postimg.cc/nVGjKvtg/Meezaan-Profile.jpg",
+                    name:"Meezaan Davids - Peer",
+                    testimonial:"Mu-een is a really calm and open guy. He has a really calming personality and is a person who would help you if needed.He is good at football and his coding skills are on a upward trajectory."
                 },
-                {
+                {   
                     image:"",
-                    testimonial:""
+                    name:"Cassidy Lawrence - Peer",
+                    testimonial:"For the past 2 years knowing Mu-een I've grown to learn that his a very talented and hard working individual ,he has a great personality that could brighten up your day ,yet he has a calming aura about him.His always there to support and motivate others and on top of that his also a great Developer.Continuously always coming up with new and interesting ideas. His a great team player always brings his part and has the ability to work unsupervised and still deliver great work."
                 },
-                {
-                    image:"",
-                    testimonial:""
+                {  
+                    image:"https://i.postimg.cc/g0wXW5Q6/Faeez-Profile.jpg",
+                    name:"Faeez Miller - Peer",
+                    testimonial:"Mu-een Slamat is a hardworking person meaning that he is committed to the task at hand and never lets anything get in his way.He is a hardworking person that will go above and beyond what most people would do in order to complete something successfully."
                 },
-                {
-                    image:"",
-                    testimonial:""
+                {   
+                    image:"https://i.postimg.cc/NFpBXBLM/t0.jpg",
+                    name:"Imraan Bernksen - Peer",
+                    testimonial:"Mu-een is a very passionate person, always attentive and enthusiastic. He's is a very friendly person to be around, keen to help out and interact with people.He has a funny side, he encourages his peers to be their best and it's a pleasure to work with him."
                 },
-                {
-                    image:"",
-                    testimonial:""
+                {   
+                    image:"https://i.postimg.cc/HnCVzYp9/C11-Brogan-Gys-3.jpg",
+                    name:"Brogan Gys - Peer",
+                    testimonial:"Mu-een is someone who never avoids a problem he would make sure to overcome all challenges that come his way, I am sure that this is an essential trait for all companies to look for in a employee, he also has great communication skills and is someone that works well within a team."
                 }
             ]
         }
@@ -41,5 +74,10 @@
 </script>
 
 <style scoped>
-
+.peers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
 </style>

@@ -15,7 +15,7 @@ footer{
     font-family: monospace;
     color: #ccd0d8;
     text-shadow: 1.5px 1.5px 1.5px #737ccf;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
 }
 </style>

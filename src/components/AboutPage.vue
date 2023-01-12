@@ -35,11 +35,13 @@
     transform: rotateY(180deg);
 }
 .card {
-    height: 100%;
+    height: 0;
     width: 100%;
     position: relative;
     transition: transform 1700ms;
     transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background-color: #1d2023;
 }
 
 .front , .back{
@@ -52,7 +54,7 @@
 }
 
 .me{
-    max-width: 30vw;
+    width: 30vw;
     height: 80vh;
     border-radius: 2rem;
     object-fit: cover;
