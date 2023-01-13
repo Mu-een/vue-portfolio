@@ -39,7 +39,9 @@ form{
     color: #737ccf;
     margin-top: 15px;
 }
-
+.form-control {
+    box-shadow: 3px 3px 4px yellow;
+}
 button{
     background-color: #1d2023;
     color: #ccd0d8;

@@ -77,7 +77,12 @@
 .peers{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 10rem;
     justify-content: center;
+    margin-top: 60px;
+    font-family: monospace;
+}
+.card {
+  box-shadow: 5px 5px 6px #84a4fc ;
 }
 </style>

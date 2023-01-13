@@ -14,11 +14,11 @@
 <div class="skill-bar">
     <label for="">HTML</label>
     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 0%"><b>0%</b></div>
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%"><b>70%</b></div>
     </div>
     <label for="">CSS</label>
     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 25%"><b>25%</b></div>
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"><b>60%</b></div>
     </div>
     <label for="">Bootstrap</label>
     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
@@ -26,11 +26,11 @@
     </div>
     <label for="">JavaScript</label>
     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"><b>75%</b></div>
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"><b>40%</b></div>
     </div>
     <label for="">Vue.js</label>
     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"><b>100%</b></div>
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 30%"><b>30%</b></div>
     </div>
 </div>
 </template>
@@ -69,20 +69,24 @@
 
 <style scoped>
 
-
+.container {
+    margin-top: 60px;
+}
 .myResume {
     color:#ccd0d8;
+    font-family: monospace;
     text-shadow: 3px 3px 5px #84a4fc ;
     margin-top: 30px;
     padding: 20px;
     border: 5px solid yellow;
-    box-shadow: 3px 3px 3px #84a4fc;
+    box-shadow: 5px 5px 6px #84a4fc;
 }
 p {
     font-size: 25px;
 }
 .skills {
     color: #84a4fc;
+    font-family: monospace;
     text-shadow: 3px 3px 5px #1463f3;
 }
 .container2 {
@@ -94,12 +98,16 @@ p {
 
 label {
     color:#84a4fc;
+    font-family: monospace;
 }
 .progress {
     height: 35px;
+    box-shadow: 3px 3px 4px #1463f3;
 }
 .progress-bar {
     background-color: #84a4fc;
     color: #1d2023;
+    font-family: monospace;
+    
 }
 </style>

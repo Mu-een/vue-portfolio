@@ -25,7 +25,7 @@
     width: 30vw;
     height: 90vh;
     margin: auto;
-    margin-top: 29px;
+    margin-top: 60px;
     position: relative;
     perspective: 650px;
 }
