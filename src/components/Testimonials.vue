@@ -1,7 +1,7 @@
 <template>
     <div class="peers">
         <div v-for="items in myTestimonials" :key="items" class="card" style="width: 18rem;">
-      <img :src= "items.image"  class="card-img-top" alt="...">
+      <img :src= "items.image"  class="card-img-top mx-auto mt-5 image" style="width: 15rem;" alt="...">
       <div class="card-body text-center">
         <h5 class="card-title">{{ items.name }}</h5>
         <p class="card-text">{{ items.testimonial }}</p>
@@ -65,4 +65,5 @@
 .card {
   box-shadow: 5px 5px 6px #84a4fc ;
 }
+
 </style>

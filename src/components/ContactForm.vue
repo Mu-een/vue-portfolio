@@ -25,7 +25,7 @@
 
     <div class="socials text-center mx-auto container">
         <i class="bi bi-geo-alt text-light location-icon "> Cape Town, South Africa</i>
-        <i class="bi bi-envelope text-light email-icon d-block">mueenslam@gmail.com</i>
+        <i class="bi bi-envelope text-light email-icon d-block"> mueenslam@gmail.com</i>
         <a href="https://www.linkedin.com/in/mueenslamat" target="_blank"><i class="bi bi-linkedin linkedin-icon"></i></a>
         <a href="https://twitter.com/mueenslamat" target="_blank"><i class="bi bi-twitter twitter-icon"></i></a>
         <a href="https://www.instagram.com/mueenslamat/" target="_blank"><i class="bi bi-instagram instagram-icon"></i></a>
@@ -63,6 +63,7 @@ button:hover {
 .socials{
     font-family: monospace;
     margin: 120px;
+    margin-bottom: 60px;
 }
 .location-icon , .email-icon{
     font-size: 25px;
@@ -80,7 +81,7 @@ button:hover {
 }
 @media screen and (min-width:200px) {
     .socials i {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 </style>

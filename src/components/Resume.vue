@@ -88,6 +88,18 @@ p {
     color: #84a4fc;
     font-family: monospace;
     text-shadow: 3px 3px 5px #1463f3;
+    animation: random 2s infinite;
+}
+@keyframes random {
+    0% {
+        color: #1463f3;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: #1463f3;
+    }
 }
 .container2 {
     width: 100px;

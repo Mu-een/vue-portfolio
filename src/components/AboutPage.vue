@@ -70,4 +70,12 @@
     align-items: center;
 }
 
+@media screen and (min-width:300px) and (max-width:700px) {
+    .front, .me, .back {
+        width: 40vw;
+   }
+    .back {
+        font-size: 15px;
+    }
+}
 </style>

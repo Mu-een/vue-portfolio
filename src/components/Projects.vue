@@ -38,22 +38,22 @@
                     Netlify:"https://mueenjsproject.netlify.app/"
                 },
                 {
-                    image:"",
-                    name:"4",
-                    GitHub:"",
-                    Netlify:""
+                    image:"https://i.postimg.cc/zvrcRD7t/bsE-com.png",
+                    name:"Bootstrap E-commerce website",
+                    GitHub:"https://github.com/Mu-een/myEcommerce.git",
+                    Netlify:"https://tranquil-brioche-84c63a.netlify.app/"
                 },
                 {
-                    image:"",
-                    name:"5",
-                    GitHub:"",
-                    Netlify:""
+                    image:"https://i.postimg.cc/brw15KwY/vue-ecom.png",
+                    name:"Vue E-commerce website",
+                    GitHub:"https://github.com/Mu-een/vue-exercise3.git",
+                    Netlify:"https://wheelies-ms.netlify.app/"
                 },
                 {
-                    image:"",
-                    name:"6",
-                    GitHub:"",
-                    Netlify:""
+                    image:"https://i.postimg.cc/RVDpmTfV/cssEcom.png",
+                    name:"HTML & CSS E-commerce website",
+                    GitHub:"https://github.com/Mu-een/miniproject.git",
+                    Netlify:"https://helpful-sprite-4c77e7.netlify.app/"
                 }
             ]
 
@@ -71,6 +71,20 @@
     margin-top: 60px;
     margin-bottom: 60px;
     font-family: monospace;
+}
+.card-title {
+    animation: fadeThat 3.5s infinite;
+}
+@keyframes fadeThat {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .card {
     box-shadow: 5px 5px 6px #84a4fc;
