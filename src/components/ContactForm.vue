@@ -18,7 +18,7 @@
            <textarea class="form-control" rows="3" placeholder="Type your message here .." required="required"></textarea>
          </div>
          <div>
-            <button type="submit button">Send <i class="bi bi-arrow-right"></i></button>
+            <button type="submit button" >Send <i class="bi bi-arrow-right"></i></button>
          </div>
         </form>
     </div>

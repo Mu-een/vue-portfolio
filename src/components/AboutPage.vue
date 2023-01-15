@@ -73,9 +73,10 @@
 @media screen and (min-width:300px) and (max-width:700px) {
     .front, .me, .back {
         width: 40vw;
+        object-fit: cover;
    }
-    .back {
+    .back  {
         font-size: 15px;
     }
-}
+}   
 </style>

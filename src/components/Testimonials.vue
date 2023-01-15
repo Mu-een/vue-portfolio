@@ -64,6 +64,17 @@
 }
 .card {
   box-shadow: 5px 5px 6px #84a4fc ;
+  animation: changeIt 3s infinite;
 }
-
+@keyframes changeIt {
+    0% {
+        box-shadow: 5px 5px 6px #84a4fc ;
+    }
+    50% {
+        box-shadow: 5px 5px 6px yellow;
+    }
+    100% {
+        box-shadow: 5px 5px 6px #84a4fc;
+    }
+}
 </style>

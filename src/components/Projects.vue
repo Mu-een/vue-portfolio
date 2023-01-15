@@ -72,22 +72,21 @@
     margin-bottom: 60px;
     font-family: monospace;
 }
-.card-title {
-    animation: fadeThat 3.5s infinite;
-}
-@keyframes fadeThat {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
 .card {
     box-shadow: 5px 5px 6px #84a4fc;
+    animation: different 3s infinite ease;
+}
+@keyframes different {
+    0% {
+        box-shadow: 5px 5px 6px #84a4fc;
+    }
+    50% {
+        box-shadow: 5px 5px 6px yellow;
+    }
+    100% {
+        box-shadow: 5px 5px 6px #84a4fc;
+    }
 }
 .btn1 {
     margin-right: 30px;
